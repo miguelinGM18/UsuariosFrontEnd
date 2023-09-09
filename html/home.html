@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <title>Home</title>
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Opciones Generales</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Agregar</a>
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <div>
+        <h3>.</h3>
+        <h6>.</h6>
+    </div>
+
+    <div class="container d-grid gap-2 d-md-flex justify-content-md-end">
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Agregar
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresa Información:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+       <form>
+            
+        <div class="mb-3">
+            <label for="exampleInputuser" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="exampleInputuser" aria-describedby="useruser">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputname" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="exampleInputname" aria-describedby="nameHelp">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputdate" class="form-label">Fecha de nacimiento</label>
+            <input type="date" class="form-control" id="exampleInputdate" aria-describedby="dateHelp">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="form8Example3">Sexo</label>
+            <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+            <select class="form-select" id="">
+              <option selected>...</option>
+              <option value="1">Masculino</option>
+              <option value="2">Femenino</option>
+            </select>
+          </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="form8Example3">Estado</label>
+                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                <select class="form-select" id="">
+                  <option selected>...</option>
+                  <option value="1">Activo</option>
+                  <option value="2">Inactivo</option>
+                </select>
+              </div>
+
+
+
+       </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar usuario</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+   
+
+   
+
+   
+
+      <div class="container">
+        <div class="row">
+            <div class="cow">
+
+                <table class="table table-hover table-striped caption-top">
+                    <caption>Lista de usuarios</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Fecha de Nacimiento</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Correo Electronico</th>
+                        <th scope="col">Estado</th>
+            
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Miguelin</td>
+                        <td>29/09/1999</td>
+                        <td>M</td>
+                        <td>Esewey@gmail.com</td>
+                        <td>T</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+      </div>
+
+   
+     
+
+</body>
+</html>
